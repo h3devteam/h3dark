@@ -62,7 +62,7 @@
 	color: black;
 }
 h1, h4, h5, h6 {
-	font-family: "Nunito", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	text-align: center;
 }
 h1.text-white {
@@ -105,10 +105,20 @@ a {
 		background-position: 100% 50%;
    }
 }
+
+.bottom-glass {
+    margin: 1rem;
+    border-radius: 2rem;
+    background-image: url(./img/bg_shine.png),linear-gradient(121deg,#000,#1f1031 20%,#3c1a7b 68%,#1e1c90);
+    background-position: 50% 50%,0 0;
+    background-size: auto,auto;
+    background-repeat: no-repeat,repeat;
+}
+
 h2.headline {
 	color: #fff;
 	letter-spacing: 1px;
-	font-family: Integralcf,Arial,sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 900;
 	line-height: .95em;
    /* margin-top: 50px;
@@ -121,23 +131,21 @@ h2.headline {
 	font-weight: 600;
 }
 h3.headline {
-	letter-spacing: -.1rem;
-	font-size: 3.5rem;
-	font-weight: 700;
-	line-height: 1;
+	/* letter-spacing: .2rem; */
+	/* line-height: 1; */
 	color: #001141;
-	font-family: Circularstd,sans-serif;
-	margin-right: 0px;
+	font-family: "Open Sans", sans-serif;
+	margin: 1rem;
 	text-align: center !important;
-	font-size: 20px;
-	font-weight: 300;
+	font-size: 1.4rem !important;
+	font-weight: 200;
 }
 .align-items-center {
 	justify-content: center !important;
 	align-items: center !important;
 }
 p {
-	font-family: Circularstd book,sans-serif;
+	font-family: "Open Sans", sans-serif;
 	text-align: center;
 	font-size: 14px;
 	color: #697077;
@@ -224,7 +232,7 @@ body {
 	text-transform: capitalize;
 	letter-spacing: 2px;
 	margin-top: 25px;
-	font-family: 'Moon Dance', cursive;
+	font-family: "Open Sans", sans-serif;
 }
 .carousel-caption p {
 	width: 60%;
@@ -381,8 +389,6 @@ section {
 		padding-top: 0;
 		margin: 0;
    }
-	.video {
-   }
 }
 .owl-carousel, .owl-carousel .owl-item {
 	-webkit-tap-highlight-color: transparent;
@@ -404,7 +410,7 @@ section {
 	clear: both;
 	visibility: hidden;
 	line-height: 0;
-	height: 0 
+	height: 0; 
 }
 .owl-carousel .owl-stage-outer {
 	position: relative;
@@ -417,23 +423,23 @@ section {
 	-ms-backface-visibility: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
 	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0) 
+	-ms-transform: translate3d(0, 0, 0); 
 }
 .owl-carousel .owl-item {
 	min-height: 1px;
 	float: left;
 	-webkit-backface-visibility: hidden;
-	-webkit-touch-callout: none 
+	-webkit-touch-callout: none;
 }
 .owl-carousel .owl-item img {
 	display: block;
-	width: 100% 
+	width: 80%;
 }
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
-	display: none 
+	display: none;
 }
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
-	display: block 
+	display: block;
 }
 .owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
 	cursor: pointer;
@@ -452,13 +458,13 @@ section {
 }
 .owl-carousel.owl-loading {
 	opacity: 0;
-	display: block 
+	display: block;
 }
 .owl-carousel.owl-hidden {
-	opacity: 0 
+	opacity: 0;
 }
 .owl-carousel.owl-refresh .owl-item {
-	visibility: hidden 
+	visibility: hidden; 
 }
 .owl-carousel.owl-drag .owl-item {
 	-ms-touch-action: pan-y;
@@ -470,26 +476,26 @@ section {
 }
 .owl-carousel.owl-grab {
 	cursor: move;
-	cursor: grab 
+	cursor: grab;
 }
 .owl-carousel.owl-rtl {
-	direction: rtl 
+	direction: rtl;
 }
 .owl-carousel.owl-rtl .owl-item {
-	float: right 
+	float: right;
 }
 .owl-carousel .animated {
 	animation-duration: 1s;
-	animation-fill-mode: both 
+	animation-fill-mode: both;
 }
 .owl-carousel .owl-animated-in {
-	z-index: 0 
+	z-index: 0;
 }
 .owl-carousel .owl-animated-out {
 	z-index: 1 
 }
 .owl-carousel .fadeOut {
-	animation-name: fadeOut 
+	animation-name: fadeOut;
 }
 @keyframes fadeOut {
 	0% {
@@ -512,11 +518,7 @@ section {
 .owl-carousel .owl-item img.owl-lazy {
 	transform-style: preserve-3d 
 }
-.owl-carousel .owl-video-wrapper {
-	position: relative;
-	height: 100%;
-	background: #000 
-}
+
 /* 
 /* */
 /* */
@@ -1025,7 +1027,7 @@ h3.headline {
 	box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 .about .btn-read-more span {
-	font-family: "Nunito", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 600;
 	font-size: 16px;
 	letter-spacing: 1px;
@@ -1051,8 +1053,17 @@ h3.headline {
 .model-box {
 	text-align: center;
 }
+
+
+/* Projects */
+.projects_page{
+	margin-top: 3rem;
+}
+
+
 /* Team */
 .team-section {
+	margin-top: 3rem;
 	padding: 64px 0;
 	background: url(./img/bg_shine.png);
 }
@@ -1362,21 +1373,21 @@ body {
 	overflow-x: hidden;
 }
 @font-face {
-	font-family: 'ESL Legend';
+	font-family: "Open Sans", sans-serif;
 	src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
 	src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
 	font-style: normal;
 	font-weight: 300;
 }
 @font-face {
-	font-family: 'ESL Legend';
+	font-family: "Open Sans", sans-serif;
 	src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
 	src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
-	font-family: 'ESL Legend';
+	font-family: "Open Sans", sans-serif;
 	src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
 	src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"), url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
 	font-style: normal;
@@ -1470,7 +1481,7 @@ img {
 	border: 3px solid #FF0;
 	background-color: #1d1d1b;
 	text-align: center;
-	font-family: 'ESL Legend', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 20px;
 	color: #FFF;
 	-webkit-border-radius: 50%;
@@ -1486,7 +1497,7 @@ img {
 }
 .ag-timeline-card_meta {
 	margin: 10px 0 0;
-	font-family: 'ESL Legend', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
 	font-size: 28px;
 	color: #FF0;
@@ -1565,7 +1576,7 @@ img {
 .ag-timeline-card_title {
 	display: none;
 	margin: 10px 0 0;
-	font-family: 'ESL Legend', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: bold;
 	font-size: 28px;
 	color: #FF0;
@@ -1890,3 +1901,27 @@ span.causale {
 	text-align: center;
 	margin: 8px;
 }
+
+.sec-halfs .half-content > div {
+	width: 50%; }
+	@media (max-width: 991.98px) {
+	  .sec-halfs .half-content > div {
+		width: 100%; } }
+  
+  .sec-halfs .half-content .img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center; }
+	@media (max-width: 991.98px) {
+	  .sec-halfs .half-content .img {
+		height: 450px; } }
+  
+  .sec-halfs .half-content .text {
+	text-align: center;
+	padding: 90px; }
+	@media (max-width: 991.98px) {
+	  .sec-halfs .half-content .text {
+		padding: 30px; } }
+  
+  .sec-halfs .half-content .heading {
+	font-weight: 600; }
