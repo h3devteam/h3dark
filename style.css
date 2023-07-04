@@ -77,8 +77,8 @@ a {
 }
 @media (max-width: 1468px){
 	.container{
-	   /* max-width: 860px;
-		*/
+	   /* max-width: 860px; */
+		
    }
 }
 @media (max-width: 768.98px){
@@ -265,22 +265,23 @@ body {
 .carousel-indicators [data-bs-target] {
 	background-color: transparent;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
 	.navbar-nav {
 		text-align: center;
-		padding: 150px;
-		
+		margin: 50px;
+	
    }
    ul .social-network{
-	margin-top: 30px;
+	margin: 30px 0 30px 0;
    }
 	.navbar-collapse {
 		background-color: rgba(29,21,40,1);
 		border-radius: 12px;
    }
 	.navbar-collapse .nav-item .nav-link {
-		color: #000;
+		color: #fff;
    }
+
 	.carousel-caption {
 		bottom: 350px;
    }
@@ -656,13 +657,9 @@ section {
 		font-weight: 600;
    }
 }
-@media (min-width: 768px) {
-	.show-mobile {
-		display: none;
-   }
-}
+
 /* EVerything */
-@media (max-width: 767.98px) {
+@media (max-width: 1000px) {
 	#timeline .timeline-badge.timeline-future-movement{
 		margin-top: 18px;
    }
@@ -719,6 +716,15 @@ section {
 	background-size: cover;
 	background-position: center;
 }
+
+
+
+
+
+
+
+
+
 .news{
 	background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(./img/grid_bottom.png);
 	background-size: cover;
