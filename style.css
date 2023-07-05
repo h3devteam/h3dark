@@ -75,13 +75,13 @@ p.text-white {
 a {
 	text-decoration: none;
 }
-@media (max-width: 1468px){
+@media only screen and (min-width: 430px) and (max-width: 767px){
 	.container{
-	    max-width: 860px;
+	   max-width: 100% !important;
 		
    }
 }
-@media (max-width: 768.98px){
+@media only screen and (min-width: 430px) and (max-width: 767px){
 	.retro-layout-alt .two-col a {
 		width: 100% !important;
 		float: none !important;
@@ -265,10 +265,10 @@ body {
 .carousel-indicators [data-bs-target] {
 	background-color: transparent;
 }
-@media (max-width: 991px) {
+@media only screen and (min-width: 430px) and (max-width: 767px) {
 	.navbar-nav {
 		text-align: center;
-		margin: 50px;
+		/* margin: 50px; */
 	
    }
    ul .social-network{
@@ -280,6 +280,7 @@ body {
    }
 	.navbar-collapse .nav-item .nav-link {
 		color: #fff;
+		font-size: 2em;
    }
 
 	.carousel-caption {
@@ -293,7 +294,7 @@ body {
 		width: 100%;
    }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 430px) and (max-width: 767px) {
 	#timeline:before {
 		display: none;
    }
@@ -347,7 +348,7 @@ body {
 	display: inline-block;
 	max-width: 100%;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 430px) and (max-width: 767px) {
 	.hero-text h1 {
 		font-size: 42px;
    }
